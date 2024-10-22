@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -16,6 +17,7 @@ import Signin from "./Authentication/Signin";
 import Signup from "./Authentication/Signup";
 import ForgotPassword from "./Authentication/ForgotPassword";
 import ResetPassword from "./Authentication/ResetPassword";
+import Loader from "./components/Loader";
 
 // Dummy authentication function (you can replace it with real logic)
 const isAuthenticated = () => {
@@ -28,6 +30,19 @@ function ProtectedRoute({ children }) {
 }
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  React.useEffect(() => {
+    // Simulate loading time
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <Router>
       <Routes>

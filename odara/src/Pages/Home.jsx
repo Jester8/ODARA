@@ -1,6 +1,7 @@
 import React from "react";
 import HomeNav from "../components/HomeNav";
-import Vid from "../assets/Videos/ODARA.mp4";
+import Vid from "../../public/assets/Videos/ODARA (1).mp4";
+import Button from "../components/Button";
 
 const Home = () => {
   return (
@@ -14,8 +15,14 @@ const Home = () => {
         <source src={Vid} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+
       <div className="relative z-10 min-h-screen flex flex-col">
         <HomeNav />
+      </div>
+      <div className="absolute bottom-[100px] w-full flex justify-center z-10 ">
+        <Button variant="secondary" className="">
+          SHOP NOW
+        </Button>
       </div>
     </div>
   );
