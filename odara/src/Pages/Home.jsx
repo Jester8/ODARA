@@ -2,6 +2,7 @@ import React from "react";
 import HomeNav from "../components/HomeNav";
 import Vid from "../../public/assets/Videos/ODARA (1).mp4";
 import Button from "../components/Button";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const Home = () => {
   return (
@@ -19,8 +20,12 @@ const Home = () => {
       <div className="relative z-10 min-h-screen flex flex-col">
         <HomeNav />
       </div>
-      <div className="absolute bottom-[100px] w-full flex justify-center z-10 ">
-        <Button variant="secondary" className="">
+      <div className="absolute bottom-[100px] w-full flex justify-center z-10">
+        <Button
+          variant="secondary"
+          className="flex items-center shadow-lg shadow-gray-500/50 hover:shadow-xl hover:shadow-gray-500/70"
+        >
+          <ShoppingCartIcon className="mr-2" />
           SHOP NOW
         </Button>
       </div>
