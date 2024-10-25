@@ -20,15 +20,17 @@ const Home = () => {
       <div className="relative z-10 min-h-screen flex flex-col">
         <HomeNav />
       </div>
-      <div className="absolute bottom-[100px] w-full flex justify-center z-10">
+
+      {/* Responsive button: moves left by 200px on mobile
+      <div className="absolute inset-x-0 bottom-0 w-full flex justify-center z-10 p-4">
         <Button
           variant="secondary"
-          className="flex items-center shadow-lg shadow-gray-500/50 hover:shadow-xl hover:shadow-gray-500/70"
+          className="flex items-center shadow-lg shadow-gray-500/50 hover:shadow-xl hover:shadow-gray-500/70 sm:translate-x-[-200px] md:translate-x-0"
         >
           <ShoppingCartIcon className="mr-2" />
           SHOP NOW
         </Button>
-      </div>
+      </div> */}
     </div>
   );
 };
