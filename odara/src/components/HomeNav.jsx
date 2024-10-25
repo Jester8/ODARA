@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo1 from "../../public/assets/logo/odara-purple.png";
+import Logo1 from "../assets/logo/Odara-purple.png";
 import { Link, useLocation } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";

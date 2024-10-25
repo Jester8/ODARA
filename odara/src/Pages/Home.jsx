@@ -1,6 +1,6 @@
 import React from "react";
 import HomeNav from "../components/HomeNav";
-import Vid from "../assets/Videos/Videos/ODARA (1).mp4";
+import Vid from "../assets/Videos/ODARA (1).mp4";
 import Button from "../components/Button";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
