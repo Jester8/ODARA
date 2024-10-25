@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Logo1 from "../../public/assets/logo/odara-purple.png"; // Ensure the path is correct
+import Logo1 from "../assets/logo/Odara-purple.png";
 
 const Loader = () => {
   const [showLoader, setShowLoader] = useState(true);
